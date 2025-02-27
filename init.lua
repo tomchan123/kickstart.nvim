@@ -132,8 +132,6 @@ vim.opt.smartcase = true
 vim.opt.signcolumn = 'yes'
 
 -- Decrease update time
-vim.opt.updatetime = 250
-
 -- Decrease mapped sequence wait time
 vim.opt.timeoutlen = 300
 
@@ -706,6 +704,7 @@ require('lazy').setup({
         'eslint_d', -- Used to lint js/ts code
         'markdownlint', -- Used to lint markdow files
         'hadolint', -- Used to lint dockerfile
+        'jsonlint', -- Used to lint json file
       })
       require('mason-tool-installer').setup { ensure_installed = ensure_installed }
 
@@ -962,6 +961,9 @@ require('lazy').setup({
         additional_vim_regex_highlighting = { 'ruby' },
       },
       indent = { enable = true, disable = { 'ruby' } },
+      incremental_selection = {
+        enable = true,
+      },
     },
     -- There are additional nvim-treesitter modules that you can use to interact
     -- with nvim-treesitter. You should go explore a few and see what interests you:
