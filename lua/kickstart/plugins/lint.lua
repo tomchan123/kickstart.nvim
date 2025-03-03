@@ -12,6 +12,7 @@ return {
         tyepscript = { 'eslint_d' },
         vue = { 'eslint_d' },
         json = { 'jsonlint' },
+        python = { 'pylint' },
       }
 
       -- To allow other plugins to add linters to require('lint').linters_by_ft,
