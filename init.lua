@@ -684,6 +684,14 @@ require('lazy').setup({
         },
 
         pyright = {},
+
+        tailwindcss = {
+          capabilities = {
+            textDocument = {
+              documentHighlight = false,
+            },
+          },
+        },
       }
 
       -- Ensure the servers and tools above are installed
